@@ -2,10 +2,4 @@
     "name": "Lint",
     "description": "lint.",
     "iconName": "bp-actions",
-    "categories": [
-        "*"
-    ],
-    "filePatterns": [
-        "*"
-    ]
 }
