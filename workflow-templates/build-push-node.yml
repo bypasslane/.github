@@ -1,0 +1,21 @@
+---
+name: Build & Push Node Image
+on:
+  release:
+    types: [published]
+jobs:
+  build:
+    runs-on: org-runner
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set job env
+        run: |
+          setJobEnv
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+      - name: Build the Docker image
+        run: |
+          dhLogin
+          dhBuildPush

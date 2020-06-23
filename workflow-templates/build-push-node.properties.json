@@ -1,0 +1,12 @@
+{
+    "name": "Docker Build Push Node",
+    "description": "Build and push docker image for Node.",
+    "iconName": "bp-actions",
+    "categories": [
+        "Javascript"
+    ],
+    "filePatterns": [
+        "package.json$",
+        "^Dockerfile*"
+    ]
+}
